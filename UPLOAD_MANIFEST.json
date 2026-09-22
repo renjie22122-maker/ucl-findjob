@@ -1,0 +1,14 @@
+{
+  "snapshot": "2026-09-22",
+  "data_policy": "No datasets, model weights, databases, login state, runtime records or archive bundles. Notebook outputs removed.",
+  "source_folders": [
+    "FindJob"
+  ],
+  "upstream_repositories": [],
+  "exclusion_counts": {
+    "archive, model weights, runtime state or generated file": 3
+  },
+  "notebooks_cleaned": 0,
+  "visibility": "public",
+  "history": "Selected working files only; original Git history remains local."
+}

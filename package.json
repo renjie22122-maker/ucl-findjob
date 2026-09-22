@@ -1,0 +1,21 @@
+{
+  "name": "findjob",
+  "private": true,
+  "version": "1.0.0",
+  "description": "秋招进度实时追踪（FindJob）",
+  "packageManager": "pnpm@11.7.0",
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,green \"pnpm --filter server dev\" \"pnpm --filter client dev\"",
+    "build": "pnpm --filter server build && pnpm --filter client build",
+    "start": "pnpm --filter server start",
+    "test": "pnpm --filter server test",
+    "test:integration": "pnpm build && node server/scripts/integration-test.mjs",
+    "check": "pnpm test && pnpm test:integration"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
